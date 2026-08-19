@@ -55,18 +55,46 @@ export function Hero() {
           <p className="label-mono flex items-center gap-2 text-lime">
             <span aria-hidden="true">✦</span> Middle East digital agency
           </p>
+           <TextReveal
+        as="h1"
+        trigger="load"
+        delay={0.25}
+        className="display-xl mt-8 max-w-5xl"
+      >
+        Empowering your <span className="text-lime">digital future.</span> 
+      </TextReveal>
+       
         </Reveal>
 
-        <TextReveal
-          as="h1"
-          trigger="load"
-          split="lines"
-          delay={0.25}
-          className="display-xl mt-6 max-w-5xl"
-        >
-          Empowering your{" "}
-          <span className="text-lime">digital future.</span>
-        </TextReveal>
+        <div className="relative w-full overflow-hidden py-8">
+          <TextReveal
+            as="h1"
+            trigger="load"
+            split="chars"
+            delay={0.25}
+            className="absolute left-0 top-8 text-[140px] md:text-[200px] lg:text-[300px] leading-none font-extrabold"
+            direction="left"
+            exit
+            exitStagger={0.02}
+            exitRotation={35}
+          >
+            Let's
+          </TextReveal>
+
+          <TextReveal
+            as="h1"
+            trigger="load"
+            split="chars"
+            delay={0.35}
+            className="absolute right-0 top-8 text-[140px] md:text-[200px] lg:text-[300px] leading-none font-extrabold text-lime"
+            direction="right"
+            exit
+            exitStagger={0.02}
+            exitRotation={35}
+          >
+            build
+          </TextReveal>
+        </div>
 
         <Reveal trigger="load" delay={0.7} direction="up" distance={30}>
           <p className="mt-8 max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">

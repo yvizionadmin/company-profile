@@ -98,22 +98,22 @@ export const services: Service[] = [
   },
   {
     num: "05",
-    title: "Paid Advertising",
-    short: "When you need targeted campaigns that maximize your ROI",
+    title: "DevOps Services",
+    short: "When you need reliable, scalable infrastructure and CI/CD",
     blurb:
-      "Every dirham accountable. We structure, launch and manage paid campaigns that maximise return — tight targeting, sharp creative, and aggressive optimisation toward your cost-per-acquisition goals.",
+      "DevOps to ship faster and operate reliably. We design infrastructure-as-code, CI/CD pipelines, monitoring and runbooks so your product teams can deploy with confidence and recover quickly.",
     why: [
-      "Lower CPA through relentless testing",
-      "Retargeting that recovers lost buyers",
-      "Clear ROAS reporting, no vanity metrics",
+      "Repeatable infrastructure with IaC",
+      "Automated CI/CD for safer releases",
+      "Monitoring and runbooks to minimise downtime",
     ],
     process: [
-      { step: "Setup", text: "Tracking, pixels, audiences." },
-      { step: "Build", text: "Campaign structure and creative." },
-      { step: "Scale", text: "Shift budget to what works." },
-      { step: "Report", text: "ROAS you can verify." },
+      { step: "Plan", text: "Assess architecture, compliance and reliability goals." },
+      { step: "Automate", text: "IaC, CI/CD pipelines, and environment provisioning." },
+      { step: "Operate", text: "Monitoring, alerting, and runbooks for on-call." },
+      { step: "Improve", text: "Cost optimisation and reliability engineering." },
     ],
-    deliverables: ["Google + Meta Ads", "Ad creative", "Conversion tracking", "Weekly optimisation"],
+    deliverables: ["Infrastructure as Code", "CI/CD pipelines", "Monitoring & alerting", "Runbooks & incident playbooks"],
   },
   {
     num: "06",

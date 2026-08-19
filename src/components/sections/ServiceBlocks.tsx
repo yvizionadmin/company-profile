@@ -47,7 +47,7 @@ export function ServiceBlocks() {
                 <Reveal direction="up" distance={20}>
                   <p className="label-mono text-lime">{service.num} / Service</p>
                 </Reveal>
-                <TextReveal as="h2" className="display-lg mt-4">
+                <TextReveal as="h2" className="display-lg mt-4" direction={flip ? "right" : "left"} exit exitStagger={0.03} exitRotation={30}>
                   {service.title}
                 </TextReveal>
                 <Reveal delay={0.15}>
@@ -97,27 +97,31 @@ export function ServiceBlocks() {
 
               {/* art + process column */}
               <div className={cn("lg:sticky lg:top-28", flip && "lg:order-1")}>
-                <ImageReveal
-                  direction={flip ? "right" : "left"}
-                >
+                <ImageReveal direction={flip ? "right" : "left"}>
                   <div
                     className={cn(
-                      "flex aspect-4/3 items-end justify-between",
+                      "flex flex-col items-end",
                       ART[i % ART.length]
                     )}
                   >
-                    <div className="relative overflow-hidden">
-                      <Image
-                        src={`/assets/images/${ART_IMAGES[i % ART_IMAGES.length]}`}
-                        alt={service.title}
-                        width={1200}
-                        height={900}
-                        sizes="(max-width: 1024px) 60vw, 33vw"
-                        className="object-cover"
-                      />
+                    <div className=" w-full md:w-[560px] lg:w-[620px]">
+                      <div className="relative rounded-2xl overflow-hidden">
+                        <Image
+                          key={service.num}
+                          src={`/assets/images/${ART_IMAGES[i % ART_IMAGES.length]}`}
+                          alt={service.title}
+                          width={1200}
+                          height={900}
+                          unoptimized
+                          loading={i === 0 ? "eager" : "lazy"}
+                          sizes="(max-width: 1024px) 60vw, 33vw"
+                          className="w-full h-full"
+                        />
+                        <span className="absolute bottom-4 right-6 text-7xl font-extrabold text-black/10 pointer-events-none">
+                          {service.num}
+                        </span>
+                      </div>
                     </div>
-
-                    
                   </div>
                 </ImageReveal>
 
