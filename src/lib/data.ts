@@ -5,7 +5,7 @@ export const site = {
   wordmark: "Y-VISION",
   tagline: "Smarter digital marketing. Better results.",
   email: "info@yvision.digital",
-  phone: "+971 56 565 6560",
+  phone: "+971 56 xxx 6560",
   location: "Dubai, United Arab Emirates",
 };
 

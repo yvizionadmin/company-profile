@@ -66,35 +66,7 @@ export function Hero() {
        
         </Reveal>
 
-        <div className="relative w-full overflow-hidden py-8">
-          <TextReveal
-            as="h1"
-            trigger="load"
-            split="chars"
-            delay={0.25}
-            className="absolute left-0 top-8 text-[140px] md:text-[200px] lg:text-[300px] leading-none font-extrabold"
-            direction="left"
-            exit
-            exitStagger={0.02}
-            exitRotation={35}
-          >
-            Let's
-          </TextReveal>
-
-          <TextReveal
-            as="h1"
-            trigger="load"
-            split="chars"
-            delay={0.35}
-            className="absolute right-0 top-8 text-[140px] md:text-[200px] lg:text-[300px] leading-none font-extrabold text-lime"
-            direction="right"
-            exit
-            exitStagger={0.02}
-            exitRotation={35}
-          >
-            build
-          </TextReveal>
-        </div>
+        
 
         <Reveal trigger="load" delay={0.7} direction="up" distance={30}>
           <p className="mt-8 max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">

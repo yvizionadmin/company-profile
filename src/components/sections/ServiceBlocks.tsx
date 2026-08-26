@@ -41,7 +41,7 @@ export function ServiceBlocks() {
             className="border-t border-line"
             id={`service-${service.num}`}
           >
-            <div className="container-x grid items-start gap-12 py-20 sm:py-28 lg:grid-cols-2 lg:gap-20">
+            <div className="container-x grid items-start gap-10 py-14 sm:gap-12 sm:py-28 lg:grid-cols-2 lg:gap-20">
               {/* text column */}
               <div className={cn(flip && "lg:order-2")}>
                 <Reveal direction="up" distance={20}>

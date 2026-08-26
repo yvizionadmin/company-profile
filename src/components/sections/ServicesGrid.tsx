@@ -6,7 +6,7 @@ import { services } from "@/lib/data";
 /** Home services overview: numbered card grid with hover micro-interactions. */
 export function ServicesGrid() {
   return (
-    <section className="container-x py-24 sm:py-32">
+    <section className="container-x py-16 sm:py-32">
       <div className="flex flex-wrap items-end justify-between gap-6">
         <div>
           <Reveal direction="up" distance={20}>
@@ -20,20 +20,20 @@ export function ServicesGrid() {
           <TransitionLink
             href="/services"
             data-cursor="link"
-            className="link-sweep label-mono text-white/60 hover:text-white"
+            className="link-sweep label-mono text-white/60 hover:text-white active:text-white"
           >
             All services →
           </TransitionLink>
         </Reveal>
       </div>
 
-      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 grid gap-4 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((service, i) => (
           <Reveal key={service.num} delay={(i % 4) * 0.07} distance={50}>
             <TransitionLink
               href="/services"
               data-cursor="link"
-              className="group flex h-full min-h-64 flex-col justify-between rounded-2xl border border-line bg-ink-2 p-6 transition-colors duration-400 hover:border-lime/60 hover:bg-ink-3"
+              className="group flex h-full min-h-44 flex-col justify-between rounded-2xl border border-line bg-ink-2 p-6 transition-colors duration-200 active:border-lime/60 active:bg-ink-3 sm:min-h-64 sm:transition-colors sm:duration-400 sm:hover:border-lime/60 sm:hover:bg-ink-3"
             >
               <span className="text-4xl font-extrabold text-lime">{service.num}</span>
               <span>
@@ -43,7 +43,7 @@ export function ServicesGrid() {
                 </span>
                 <span
                   aria-hidden="true"
-                  className="mt-5 inline-block text-lime transition-transform duration-400 group-hover:translate-x-2"
+                  className="mt-5 inline-block text-lime transition-transform duration-400 group-hover:translate-x-2 group-active:translate-x-2"
                 >
                   →
                 </span>

@@ -108,52 +108,67 @@ body {
   }
 }
 
-/* Buttons */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 9999px;
-  padding: 0.9rem 1.75rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  white-space: nowrap;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-.btn-lime {
-  background: var(--color-lime);
-  color: var(--color-ink);
-}
-.btn-lime:hover {
-  background: #fff;
-}
-.btn-ghost {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #fff;
-}
-.btn-ghost:hover {
-  border-color: #fff;
-}
+/* Buttons and links live in the components layer so Tailwind utility
+   classes (e.g. max-sm:hidden, w-full) reliably override them — unlayered
+   CSS otherwise always wins over @layer utilities regardless of source order. */
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    padding: 0.9rem 1.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  .btn-lime {
+    background: var(--color-lime);
+    color: var(--color-ink);
+  }
+  .btn-lime:hover,
+  .btn-lime:active {
+    background: #fff;
+  }
+  .btn-ghost {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+  }
+  .btn-ghost:hover,
+  .btn-ghost:active {
+    border-color: #fff;
+  }
+  @media (hover: none) {
+    .btn {
+      transition: background-color 0.15s, color 0.15s, border-color 0.15s, transform 0.15s;
+    }
+    .btn:active {
+      transform: scale(0.97);
+    }
+  }
 
-/* Link underline sweep */
-.link-sweep {
-  position: relative;
-}
-.link-sweep::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  height: 1px;
-  width: 100%;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
-}
-.link-sweep:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  /* Link underline sweep */
+  .link-sweep {
+    position: relative;
+  }
+  .link-sweep::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .link-sweep:hover::after,
+  .link-sweep:active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 /* Custom cursor is rendered by JS; keep native cursor for accessibility. */
