@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
+import path from "node:path";
 
 const nextConfig: NextConfig = {
   turbopack: {
-    // Anchor Turbopack to this project (a stray lockfile exists in $HOME).
-    root: __dirname,
+    root: path.resolve(process.cwd()),
   },
 };
 
