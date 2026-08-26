@@ -11,7 +11,7 @@ type PageHeroProps = {
 /** Inner-page hero: mono label, oversized masked title, supporting copy. */
 export function PageHero({ label, title, copy }: PageHeroProps) {
   return (
-    <section className="container-x pt-44 pb-20 sm:pt-52 sm:pb-28">
+    <section className="container-x pt-32 pb-16 sm:pt-52 sm:pb-28">
       <Reveal trigger="load" delay={0.1} direction="up" distance={24}>
         <p className="label-mono text-lime">( {label} )</p>
       </Reveal>

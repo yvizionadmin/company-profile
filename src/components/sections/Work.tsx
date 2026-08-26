@@ -53,7 +53,7 @@ export function Work() {
             </div>
 
             <div className="relative">
-              <h3 className="display-md transition-transform duration-500 group-hover:-translate-y-1">
+              <h3 className="display-md transition-transform duration-500 group-hover:-translate-y-1 group-active:-translate-y-1">
                 {work.title}
               </h3>
               <div className="mt-4 flex flex-wrap gap-2">

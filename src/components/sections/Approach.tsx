@@ -28,7 +28,7 @@ export function Approach() {
         <div>
           {approach.map((step, i) => (
             <Reveal key={step.num} delay={i * 0.05} distance={50}>
-              <div className="group border-t border-line py-10 transition-colors duration-400 last:border-b hover:border-lime/40">
+              <div className="group border-t border-line py-8 transition-colors duration-400 last:border-b hover:border-lime/40 active:border-lime/40 sm:py-10">
                 <div className="flex items-baseline gap-6">
                   <span className="font-mono text-sm text-lime">{step.num}</span>
                   <div>
