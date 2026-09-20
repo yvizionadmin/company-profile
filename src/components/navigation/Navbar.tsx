@@ -71,7 +71,7 @@ export function Navbar() {
             onClick={() => setMenuOpen(true)}
             data-cursor="link"
             aria-label="Open menu"
-            className="flex items-center gap-2.5 pr-3"
+            className="flex items-center gap-2.5 py-2.5 pr-3"
           >
             <span className="flex flex-col gap-1" aria-hidden="true">
               <span className="h-0.5 w-4 bg-ink" />
@@ -82,7 +82,7 @@ export function Navbar() {
           <TransitionLink
             href="/"
             data-cursor="link"
-            className="px-4 text-base font-extrabold tracking-tight sm:px-6"
+            className="px-2.5 text-base font-extrabold tracking-tight whitespace-nowrap sm:px-6"
           >
             {site.wordmark}
           </TransitionLink>
@@ -90,7 +90,7 @@ export function Navbar() {
             <TransitionLink
               href="/contact"
               data-cursor="link"
-              className="btn bg-ink py-2.5! text-white hover:bg-ink-3"
+              className="btn bg-ink py-2.5! text-white hover:bg-ink-3 max-sm:px-4"
             >
               Book a call <span aria-hidden="true">↗</span>
             </TransitionLink>

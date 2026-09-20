@@ -15,6 +15,7 @@ type MenuProps = {
 
 const EXPLORE = [
   { label: "About Us", href: "/about" },
+  { label: "Who We Are", href: "/who-we-are" },
   { label: "Works", href: "/" },
   { label: "Contact", href: "/contact" },
 ];

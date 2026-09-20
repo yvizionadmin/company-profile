@@ -294,6 +294,40 @@ export const nav = {
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
+    { label: "Who we are", href: "/who-we-are" },
     { label: "Contact", href: "/contact" },
   ],
 };
+
+/** "Who we are" page content. */
+export const whoWeAre = {
+  experience: [
+    { label: "E-commerce", value: 10, caption: "Years in e-commerce" },
+    { label: "Catalogue", value: 10, caption: "Years in catalogue" },
+    { label: "Design & Engineering", value: 15, caption: "Years in design & engineering" },
+  ],
+  expertise: [
+    {
+      icon: "box",
+      label: "Commerce",
+      text: "Catalogue, customer journeys, and commerce systems.",
+    },
+    {
+      icon: "pen",
+      label: "Design",
+      text: "Interfaces, systems, and experiences shaped for clarity.",
+    },
+    {
+      icon: "code",
+      label: "Engineering",
+      text: "Scalable platforms, infrastructure, and production-ready technology.",
+    },
+  ],
+  journey: [
+    { icon: "bulb", label: "Idea" },
+    { icon: "search", label: "Understand" },
+    { icon: "pen", label: "Design" },
+    { icon: "code", label: "Build" },
+    { icon: "growth", label: "Scale" },
+  ],
+} as const;
