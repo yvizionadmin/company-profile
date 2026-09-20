@@ -101,8 +101,8 @@ export function WhoClosing() {
 
         <Reveal delay={0.9} direction="up" distance={24}>
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/55 sm:text-lg">
-            We combine deep commerce knowledge with modern design, engineering, and AI to help
-            businesses build, launch, and evolve their digital commerce ecosystem.
+            We combine deep E-commerce knowledge with modern design, engineering, and AI to help
+            businesses build, launch, and evolve their digital E-commerce ecosystem.
           </p>
         </Reveal>
 

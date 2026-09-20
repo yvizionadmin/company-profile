@@ -335,7 +335,7 @@ export const whoWeAre = {
   technology: {
     eyebrow: "Technology behind e-commerce",
     headline: ["Built for", "Modern E-commerce."],
-    line: "From storefront to marketplace, catalogue to operations, and AI to growth — we build the technology behind digital commerce.",
+    line: "From storefront to marketplace, catalogue to operations, and AI to growth — we build the technology behind digital E-commerce.",
     layers: [
       { id: "experience", label: "Experience", tech: ["React", "Next.js", "React Native"] },
       {
