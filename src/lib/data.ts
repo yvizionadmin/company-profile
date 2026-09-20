@@ -309,7 +309,7 @@ export const whoWeAre = {
   expertise: [
     {
       icon: "box",
-      label: "Commerce",
+      label: "E-commerce",
       text: "Catalogue, customer journeys, and commerce systems.",
     },
     {
@@ -330,4 +330,26 @@ export const whoWeAre = {
     { icon: "code", label: "Build" },
     { icon: "growth", label: "Scale" },
   ],
+  ecosystem: ["Catalogue", "Storefront", "Marketplace", "OMS", "Customer", "Growth"],
+  disciplines: ["Idea", "Experience", "E-commerce", "Scale"],
+  technology: {
+    eyebrow: "Technology behind e-commerce",
+    headline: ["Built for", "Modern E-commerce."],
+    line: "From storefront to marketplace, catalogue to operations, and AI to growth — we build the technology behind digital commerce.",
+    layers: [
+      { id: "experience", label: "Experience", tech: ["React", "Next.js", "React Native"] },
+      {
+        id: "commerce",
+        label: "E-commerce",
+        tech: ["E-commerce", "Marketplace", "PIM", "OMS", "Seller Platform"],
+      },
+      { id: "engineering", label: "Engineering", tech: ["Node.js", "APIs", "Data", "Integrations"] },
+      { id: "cloud", label: "Cloud", tech: ["Cloud", "CI/CD", "DevOps", "Scalability"] },
+      {
+        id: "ai",
+        label: "AI",
+        tech: ["AI Search", "AI Content", "AI Automation", "AI Image Generation"],
+      },
+    ],
+  },
 } as const;

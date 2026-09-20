@@ -31,7 +31,7 @@ const pct = (v: number, of: number) => `${(v / of) * 100}%`;
 const stroke = "rgba(255,255,255,0.09)";
 
 /**
- * "Commerce is in our DNA" diagram. On scroll-in the blueprint draws itself,
+ * "E-commerce is in our DNA" diagram. On scroll-in the blueprint draws itself,
  * the core pops and the six commerce nodes bloom outwards along their
  * spokes. Afterwards satellites orbit the rings, the core radiates ripples,
  * data pulses run out to the nodes and the nodes drift.
@@ -262,7 +262,7 @@ export function DnaOrbit() {
             className="label-mono grid size-[77.8%] place-items-center rounded-full bg-lime font-bold text-ink"
             style={{ fontSize: "max(0.5rem, 1.5cqw)" }}
           >
-            Commerce
+            E-commerce
           </div>
         </div>
       </div>

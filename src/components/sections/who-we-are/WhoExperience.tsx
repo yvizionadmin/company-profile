@@ -20,6 +20,19 @@ export function WhoExperience() {
         >
           Experience that goes beyond pixels and code.
         </TextReveal>
+        <Reveal direction="up" distance={20} delay={0.15}>
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-white/55 sm:text-lg">
+            With{" "}
+            <strong className="font-semibold text-paper">
+              10+ years of e-commerce and catalogue expertise
+            </strong>{" "}
+            and{" "}
+            <strong className="font-semibold text-paper">
+              15+ years across design and engineering
+            </strong>
+            , we understand what happens behind the storefront — not just what customers see.
+          </p>
+        </Reveal>
 
         <div className="mt-14 grid gap-5 sm:mt-16 md:grid-cols-3 md:gap-6">
           {whoWeAre.experience.map((item, i) => (

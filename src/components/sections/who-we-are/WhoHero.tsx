@@ -49,8 +49,12 @@ export function WhoHero() {
           </h1>
 
           <Reveal trigger="load" delay={1.2} direction="up" distance={24}>
-            <p className="mt-8 max-w-xs text-sm leading-relaxed text-white/50">
-              Deep e-commerce experience, brought together with design and technology.
+            <p className="mt-8 max-w-md text-sm leading-relaxed text-white/50 sm:text-base">
+              We are a team of experienced{" "}
+              <strong className="font-semibold text-paper">
+                e-commerce specialists, designers, catalogue experts, and engineers
+              </strong>{" "}
+              building digital commerce experiences for ambitious businesses.
             </p>
           </Reveal>
         </div>

@@ -7,6 +7,7 @@ import { Reveal } from "@/components/animation/Reveal";
 import { TextReveal } from "@/components/animation/TextReveal";
 import { GridBackdrop } from "./GridBackdrop";
 import { SpotlightCard } from "./SpotlightCard";
+import { FlowChain } from "./FlowChain";
 import { Icon } from "./icons";
 import { whoWeAre } from "@/lib/data";
 
@@ -112,10 +113,22 @@ export function WhoExpertise() {
             split="chars"
             stagger={0.02}
             delay={0.1}
-            className="mt-2 text-[clamp(1.1rem,1.7vw,1.5rem)] font-extrabold tracking-[-0.02em] text-paper uppercase"
+            className="mt-3 text-[clamp(1.4rem,2.4vw,2.1rem)] font-extrabold tracking-[-0.03em] text-paper uppercase"
           >
-            Experience, together.
+            E-commerce + Design + Technology
           </TextReveal>
+          <Reveal direction="up" distance={16} delay={0.2}>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/55 sm:text-base">
+              We bring these disciplines together to turn ideas into{" "}
+              <strong className="font-semibold text-paper">
+                scalable digital commerce experiences
+              </strong>
+              .
+            </p>
+          </Reveal>
+          <Reveal direction="up" distance={16} delay={0.3}>
+            <FlowChain items={whoWeAre.disciplines} className="mt-6 justify-center" />
+          </Reveal>
         </div>
       </div>
     </section>

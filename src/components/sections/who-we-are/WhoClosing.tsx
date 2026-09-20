@@ -81,6 +81,9 @@ export function WhoClosing() {
       </div>
 
       <div className="container-x relative">
+        <Reveal direction="up" distance={20}>
+          <p className="label-mono mb-8 text-lime">Built for what&apos;s next.</p>
+        </Reveal>
         <h2 className="text-[clamp(2.25rem,5.1vw,4.75rem)] leading-[1.06] font-extrabold tracking-[-0.055em] uppercase">
           <span data-line-a className="block">
             <TextReveal as="span" split="chars" stagger={0.02} className="block">
@@ -97,8 +100,9 @@ export function WhoClosing() {
         </h2>
 
         <Reveal delay={0.9} direction="up" distance={24}>
-          <p className="mt-8 max-w-xl text-base text-white/55 sm:text-lg">
-            E-commerce expertise. Human experience. Technology built to scale.
+          <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/55 sm:text-lg">
+            We combine deep commerce knowledge with modern design, engineering, and AI to help
+            businesses build, launch, and evolve their digital commerce ecosystem.
           </p>
         </Reveal>
 
